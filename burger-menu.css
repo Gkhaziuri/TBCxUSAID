@@ -1,0 +1,48 @@
+
+.burger-menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2222;
+    color: #a9a9a9;
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -30%;
+    width: 40%; 
+    height: 100vh;
+    background-color: #333; /* Change the background color to fully opaque */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+}
+.show-menu {
+    display: block;
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+}
